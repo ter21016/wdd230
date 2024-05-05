@@ -20,6 +20,10 @@ header, footer {
     flex-direction: column;
     border: solid 1px var(--accent3-color);
     border-radius: 10px;
+    list-style-type: none;
+}
+.list{
+    list-style-type: none;
 }
 .card-grid {
     display: grid;
@@ -54,6 +58,7 @@ h3{
     flex-direction: row;
     border-radius: 5px;
     background: rgb(217, 203, 203);
+    
     
     
     
@@ -99,6 +104,7 @@ nav  {
 }
 
 
+
 header nav {
     display: flex;
     list-style: none;
@@ -113,25 +119,55 @@ nav ul{
 }
 
 
-nav a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-   
-    
-    
-   
-}
+
 nav a:hover {
     background-color: rgba(255,255,255, 0.2);
 }
-.active{
-    color: #4c1075;
+li.active{
+    background-color: #eec1ed;
   
 }
 
+
+ul.menuLinks{
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: #ffff;
+    text-decoration: none;
+}
+
+ul.menuLinks li.active a {
+    color: red;
+}
+#myButton.open::before{
+    content: "X";
+}
+
+ul.open.menuLinks{
+    display: blocks;
+}
+
+#myButton{
+    font-size:  2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    box-sizing:initial;
+    text-align: left;
+    padding: .25rem 2vw;
+
+}
+
+#myButton::before{
+    content: "\2630";
+}
 footer p{
    
     
@@ -144,35 +180,17 @@ footer p{
 
 
 /* Media Query for Mobile View */
-@media (max-width: 768px) {
-    .card-grid {
-        margin: 10px;
-    }
-    
-    nav ul{
-        display: flex;
-    }
-    .card-grid {
-        grid-template-columns: 1fr;
+@media  (max-width: 786px) {
+   
+    h2{
+        font-size: 36px;
+        
         
     }
 
-    header img {
-        max-width: 100px;
-        margin: 20px;
-    }
 
-    header h1 {
-        font-size: 1.5em;
-    }
 
-    nav a {
-        font-size: 20px;
-    }
 
-    footer p {
-        font-size: 1em;
-    }
 }
 
 

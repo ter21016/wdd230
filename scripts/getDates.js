@@ -7,3 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const lastModifiedDate = document.lastModified;
     document.getElementById("lastModified").textContent = "Last Modified: " + lastModifiedDate;
 });
+
+
+const hamburgerElement = document.querySelector('#myButton');
+const navElement = document.querySelector('#animateme');
+
+hamburgerElement.addEventListener('click', () =>{
+    navElement.classList.toggle('open');
+    hamburgerElement.classList.toggle('open');
+
+});
