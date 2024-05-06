@@ -1,134 +1,132 @@
-
 body {
-   font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
+  
+
 }
 
-
-header, footer {
-    background-color: rgb(101, 182, 233);
-    color: rgb(12, 18, 22);
-    text-align: center; 
-    
-    align-items: center;
+header {
+    color: white;
+    text-align: center;
     display: flex;
     justify-content: center;
-  
+    align-items: center;
+    position: relative;
+    background-color: rgb(0, 64, 85);
+ }
+
+
+        
+
+#darkMode{
+    position: absolute;
    
+    
+   
+    top: 1rem; 
+    right: 1rem;
+    width: 40px;
+    cursor: pointer;
+    background-color: #fff;
+    
 }
+
+.darkMain{
+    background-color: black;
+    color: white;
+}
+
 .card {
-    display: flex;
-    flex-direction: column;
-    border: solid 1px var(--accent3-color);
-    border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        border: solid 1px var(--accent3-color);
+        border-radius: 10px;
+        list-style-type: none;
+}
+
+.list {
     list-style-type: none;
 }
-.list{
-    list-style-type: none;
-}
+
 .card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 30px;
-    
+     margin: 30px;
 }
- h2{
-    
-    
+
+h2 {
     font-size: 2rem;
     margin: 1rem;
 }
 
-
 .card-grid {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     grid-template-rows: auto;
     border-radius: 5px;
 }
 
-h3{
+h3 {
     padding: 20px;
     background-color: rgb(127, 180, 236);
     margin: 0px;
 }
 
 .card-header {
-    
     flex-direction: row;
     border-radius: 5px;
     background: rgb(217, 203, 203);
-    
-    
-    
-    
-   
 }
-
 
 header img {
-        max-width: 180px;
-        border-radius: 6px;
-        
-        margin: 40px 40px;
-        box-shadow: 5px 5px  #13121244;
-        
-        width: 10%;
-        height: auto;
-        border-radius: 5px;
+    max-width: 180px;
+    border-radius: 6px;
+    margin: 40px 40px;
+    box-shadow: 5px 5px #13121244;
+     width: 10%;
+    height: auto;
+    border-radius: 5px;
 }
-    
-  
-header h1{
-    margin-top: 0;
+
+header h1 {
+     margin-top: 0;
     font-size: 2.5em;
     background-color: var(--accent3-color);
-    
 }
 
-
-nav li{
+nav li {
     display: inline-block;
-    font-size: 30px;
-    margin-right: 80px;
-    
-      
+     font-size: 30px;
+     margin-right: 80px;
 }
 
-
-nav  {
+nav {
     background-color: rgb(129, 219, 190);
-    display: flex;
-    justify-content: space-around ;
-   
 }
-
-
-
 header nav {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
-nav ul{
-    display: flex;
-    justify-content: space-evenly ;
+nav ul {
+     display: flex;
+    justify-content: space-evenly;
 }
-
-
 
 nav a:hover {
-    background-color: rgba(255,255,255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
-li.active{
+
+li.active {
     background-color: #eec1ed;
-  
 }
 
 
+
+
+        
 ul.menuLinks{
     display: flex;
     justify-content: flex-end;
@@ -162,37 +160,103 @@ ul.open.menuLinks{
     box-sizing:initial;
     text-align: left;
     padding: .25rem 2vw;
-
+    display:none
 }
 
-#myButton::before{
-    content: "\2630";
-}
-footer p{
-   
-    
-    font-size: 30px;
-    color: black;
-   
-} 
+
 
     
+#myButton::before {
+     content: "\2630";
+}
 
-
-/* Media Query for Mobile View */
-@media  (max-width: 786px) {
-   
-    h2{
-        font-size: 36px;
         
-        
-    }
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 64, 85);
+    color: #fff;
+}
 
+@media (max-width: 786px) {
+body {
+        font-size: 14px;
+}
 
+ header {
+        flex-direction: column;
+        text-align: center;
+}
 
+header img {
+    max-width: 100%;
+    margin: 20px auto;
+}
 
+header h1 {
+    margin: 0;
+}
+
+ nav ul {
+    flex-direction: column;
+    margin: 0;
+     padding: 0;
+ }
+
+nav li {
+    margin: 10px 0;
+}
+
+#myButton {
+    padding: 0.5rem 1rem;
+    display: block; /* Showing the button in mobile view */
+}
+
+.card-grid {
+    grid-template-columns: 1fr;
+}
+
+.card {
+     margin: 10px;
+ }
+
+h2 {
+    font-size: 24px;
+    margin: 0.5rem;
+}
+
+ h3 {
+    font-size: 1.5rem;
+    padding: 10px;
+ }
+
+footer p {
+    font-size: 20px;
+ }
+
+ul.menuLinks {
+    display: none; /* Hiding the menu in mobile view */
+}
+
+ul.menuLinks.open {
+    display: flex; /* Showing the menu when the button is clicked */
+    flex-direction: column;
+    background-color: rgb(129, 219, 190);
+    padding: 10px;
+    border-radius: 5px;
+     position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+ul.menuLinks.open li {
+    margin: 10px 0;
 }
 
 
-
-
+}
+ 
