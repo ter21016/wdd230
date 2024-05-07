@@ -101,7 +101,7 @@ nav li {
 }
 
 nav {
-    background-color: rgb(129, 219, 190);
+    background-color: #4892d7;
 }
 header nav {
     display: flex;
@@ -119,9 +119,7 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-li.active {
-    background-color: #eec1ed;
-}
+
 
 
 
@@ -135,13 +133,16 @@ ul.menuLinks{
 ul.menuLinks li a {
     display: block;
     padding: .75rem 2vw;
-    color: #ffff;
+    color: black;
     text-decoration: none;
 }
 
 ul.menuLinks li.active a {
-    color: red;
+    background-color: #75ac8b;
+    color: black;
 }
+
+
 #myButton.open::before{
     content: "X";
 }
@@ -211,7 +212,7 @@ nav li {
 
 #myButton {
     padding: 0.5rem 1rem;
-    display: block; /* Showing the button in mobile view */
+    display: block; 
 }
 
 .card-grid {
@@ -236,12 +237,9 @@ footer p {
     font-size: 20px;
  }
 
-ul.menuLinks {
-    display: none; /* Hiding the menu in mobile view */
-}
 
-ul.menuLinks.open {
-    display: flex; /* Showing the menu when the button is clicked */
+ul.open .menuLinks{
+    display: flex; 
     flex-direction: column;
     background-color: rgb(129, 219, 190);
     padding: 10px;
@@ -258,5 +256,8 @@ ul.menuLinks.open li {
 }
 
 
-}
+
+
+
+
  

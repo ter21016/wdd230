@@ -1,0 +1,663 @@
+:root {
+    --base:  rgb(244, 235, 218);
+    --dark-blue: #323d4f;
+    --haze-blue: #4c6372;
+    --seafoam: #9eb4a7;
+    --dead-salmon: #e2b094;
+    --sunshine: #fff4cd;
+    --heading-txt: 'Oswald', sans-serif;
+    --body-txt: 'Lora', serif;
+}
+
+/* Fonts */
+
+h1, h2, h3 {
+    font-family: var(--heading-txt);
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+h4 {
+    font-family: var(--body-txt);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+p {
+    font-family: var(--body-txt);
+}
+
+a {
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: var(--heading-txt);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+/* Colors */
+
+html {
+    background-color: var(--base);
+}
+
+header {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+nav a, nav a:visited {
+    color: white;
+}
+
+nav a:hover, a:active {
+    color: var(--sunshine);
+}
+
+#action-menu {
+    background-color: var(--dead-salmon);
+}
+
+.event-card {
+    background-color: white;
+}
+
+#spotlight {
+    background-color: var(--seafoam);
+}
+
+.button a, .button a:visited, .button a:active {
+    color: black;
+}
+
+.button a:hover {
+    color: var(--dark-blue);
+}
+
+#action-menu a, #action-menu a:visited, #action-menu a:active, #spotlight a, #spotlight a:visited, #spotlight a:active {
+    color: var(--dark-blue);
+}
+
+#action-menu a:hover, #spotlight a:hover {
+    color: var(--haze-blue);
+}
+
+.button {
+    background-color: var(--seafoam);
+}
+
+footer {
+    background-color: #323d4f;
+}
+
+footer p {
+    color: white;
+}
+
+/* Formatting */
+
+/* ----- general content ----- */
+
+.show-banner {
+    background-color: var(--dead-salmon);
+    color: black;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: -1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 7rem;
+    padding-left: 3rem;
+}
+
+.closed {
+    display: none;
+    visibility: hidden;
+}
+
+#banner-close {
+    font-size: 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+#site { 
+    overflow-x: hidden; 
+}
+
+body {
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.button {
+    width: 12rem;
+    height: 1.1rem;
+    border-radius: 10px;
+
+    text-align: center;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    margin: 0;
+}
+
+.button a {
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* ----- header content ----- */
+
+
+
+header {
+    width: auto;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+h1 {
+    margin-top: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    position: relative;
+    left: 6rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+/* ----- hero content ----- */
+
+#hero {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 25% 50% 25%;
+
+    width: 100%;
+}
+
+#hero img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 50%;
+}
+
+#hero h2, #hero p, #hero div {
+    grid-column: 2 / 3;
+    margin: 2rem;
+}
+
+/* ----- 'things we do for you' content ----- */
+
+#action-menu {
+    padding: 3rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5rem auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#action-menu h2 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    grid-column: 1 / 4;
+}
+
+#action-menu img {
+    width: clamp(100px, 100%, 600px);
+}
+
+.action-card {
+    padding: 1rem;
+    grid-row-start: 2;
+}
+
+/* ----- event timeline content ----- */
+
+.event-card {
+    padding: 1rem;
+    width: clamp(300px, 75%, 500px);
+    margin: 2.5rem auto;
+}
+
+#events img {
+    width: clamp(100px, 100%, 600px);
+}
+
+#events h2 {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#events h3 {
+    margin-top: 1.5rem;
+}
+
+/* ----- business spotlight content ----- */
+
+#spotlight {
+    padding: 10rem;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+#spotlight h2 {
+    text-align: center;
+    grid-column: span 2;
+}
+
+.spotlight-card {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr repeat(auto-fill, 5rem);
+}
+
+#spotlight h3, #spotlight h4 {
+    text-align: center;
+}
+
+#spotlight img {
+    width: clamp(10rem, 90%, 15rem);
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#spotlight p, #spotlight a {
+    max-width: 60%;
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* ----- footer content ----- */
+
+#weather {
+    padding: 3rem;
+    text-align: center;
+}
+
+footer {
+    /* margin: -3rem; */
+    padding: 4rem;
+    text-align: center;
+}
+
+footer .logo {
+    width: clamp(50px, 50%, 150px);
+    height: auto;
+    aspect-ratio: 1 / 1; 
+}
+
+#forecast {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-x: scroll;
+}
+
+#forecast p:first-child {
+    font-weight: 600;
+}
+
+/* dark mode button and effects */
+
+.switch {
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    display: inline-block;
+    width: 75px;
+    height: 34px;
+}
+  
+.darkbtn {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--seafoam);
+    border-radius: 0.5rem;
+}
+
+.darkbtn {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.darkbtn:hover {
+    color: var(--haze-blue);
+}
+
+.dark {
+    background-color: var(--haze-blue);
+    color: white;
+}
+
+.dark #action-menu .action-card a {
+    color: white;
+}
+
+.dark #action-menu,
+.dark .event-card, 
+.dark #spotlight,
+.dark #membership-benefits,
+.dark #member-directory section,
+.dark .sidebar div {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.dark #member-directory section h3,
+.dark #member-directory section h4,
+.dark #member-directory section p,
+.dark #member-directory section a {
+    color: white;
+}
+  
+/* less than 1345px is where it starts needing new  */
+
+
+/* larger web page */
+
+
+@media screen and (min-width: 1050px) {
+
+    nav {
+        left: 8rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    nav {
+        left: 12rem;
+    }
+
+}
+
+@media screen and (min-width: 1350px) {
+
+    nav {
+        left: 16rem;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+
+    nav {
+        left: 20rem;
+    }
+
+}
+
+
+
+/* --------------------- DISCOVER PAGE --------------------- */
+
+#discover {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 2rem;
+
+    margin: 3rem;
+}
+
+#discover h2 {
+    text-align: center;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    font-size: 2.2rem;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+}
+
+.sidebar h3 {
+    margin-top: 0.5rem;
+}
+
+.sidebar div {
+    border: none;
+    background-color: var(--seafoam);
+    color: black;
+    border-radius: 0.25rem;
+    border-style: none;
+    margin: 0.5rem;
+    margin-top: 1.2rem;
+    padding: 1rem;
+}
+
+.gallery {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery .gallery-img {
+    width: clamp(10rem, 30%, 20rem);    
+    padding: 0.25rem;
+    box-sizing: border-box;
+}
+
+.gallery .gallery-img img {
+    aspect-ratio: 4 / 5;
+    width: 100%;
+    height: auto;
+    transition: 0.4s;
+}
+
+.gallery .gallery-img img:hover {
+    transform: scale(0.95);
+    transition: 0.4s;
+}
+
+.gallery .gallery-img p {
+    font-size: 0.9rem;
+}
+
+/* -------------------------- JOIN PAGE STYLES ----------------------------- */
+
+@media screen and (min-width: 700px) {
+
+    #join-page {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    #membership-benefits {
+        grid-column: 2 / 3;
+    }
+
+    .form {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+}
+
+#membership-benefits {
+    border: none;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 1rem;
+
+    background-color: var(--dead-salmon);
+    color: black;
+}
+
+#membership-benefits h2 {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+#membership-benefits h3 {
+    font-size: 1rem;
+    margin-top: 1.2rem;
+}
+
+#membership-benefits p {
+    font-size: 0.9rem;
+}
+
+.form {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+form label, p {
+    font-size: 0.85rem;
+}
+
+form input[type="text"], input[type="email"], input[type="tel"] {
+    width: 15rem;
+}
+
+textarea {
+    width: 75%;
+    min-height: 6rem;
+}
+
+::placeholder {
+    font-family: var(--body-txt);
+}
+
+.required::after {
+    content: "*";
+    color: rgb(243, 121, 121);
+}
+
+#submission {
+    cursor: pointer;
+
+    background-color: var(--seafoam); /* Green */
+    color: black;
+    
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    text-align: center;
+
+    width: 8rem;
+
+    font-size: 1rem;
+    font-family: var(--heading-txt);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#thankyou {
+    margin: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+
+/* -------------------------------- Directory Page ------------------------------- */
+
+#directory {
+    margin: 3rem;
+}
+
+#directory h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+}
+
+#member-directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#member-directory section {
+    width: 100%;
+    align-items: center;
+    background-color: var(--seafoam);
+    padding: 0.5rem;
+    padding-bottom: 2rem;
+    border: none;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr repeat(auto-fill, 5rem);
+
+}
+
+#member-directory h3, #member-directory h4, #member-directory p {
+    text-align: center;
+    color: black;
+}
+
+#member-directory h4 {
+    font-size: 0.8rem;
+    margin-top: 0;
+}
+
+#member-directory a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    text-align: center;
+}
+
+#member-directory img {
+    aspect-ratio: 1 / 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    width: 75%;
+    height: auto;
+}
