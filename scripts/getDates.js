@@ -15,7 +15,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const mainElement = document.querySelector('body');
 
     hamburgerElement.addEventListener('click', () => {
-        navElement.classList.toggle('open');
+        /*navElement.classList.toggle('open');*/
+        if (navElement.style.display=== 'flex'){
+            navElement.style.display= 'none';
+        }
+        else{
+            navElement.style.display='flex';
+        }
+        
+
         hamburgerElement.classList.toggle('open');
     });
 

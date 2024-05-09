@@ -151,6 +151,9 @@ ul.open.menuLinks{
     display: blocks;
 }
 
+ul.close.menuLinks{
+    display: none;
+}
 #myButton{
     font-size:  2rem;
     background: none;
@@ -254,7 +257,9 @@ ul.open .menuLinks{
 ul.menuLinks.open li {
     margin: 10px 0;
 }
-
+#animateme{
+    display: flex;
+}
 
 
 

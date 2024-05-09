@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #3498db;
+    background-color: #323d4f;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -39,6 +39,6 @@ ul {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #3498db;
+    background-color: #323d4f;
     color: #fff;
 }
