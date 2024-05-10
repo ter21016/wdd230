@@ -185,25 +185,25 @@ footer {
 }
 
 @media (max-width: 786px) {
-body {
+    body {
         font-size: 14px;
-}
+    }
 
- header {
+    header {
         flex-direction: column;
         text-align: center;
-}
+    }
 
-header img {
+    header img {
     max-width: 100%;
     margin: 20px auto;
-}
+    }
 
-header h1 {
+    header h1 {
     margin: 0;
-}
+    }
 
- nav ul {
+    nav ul {
     flex-direction: column;
     margin: 0;
      padding: 0;
@@ -261,8 +261,4 @@ ul.menuLinks.open li {
     display: flex;
 }
 
-
-
-
-
- 
+}
