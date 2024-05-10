@@ -147,9 +147,6 @@ ul.menuLinks li.active a {
     content: "X";
 }
 
-ul.open.menuLinks{
-    display: blocks;
-}
 
 ul.close.menuLinks{
     display: none;
@@ -184,7 +181,7 @@ footer {
     color: #fff;
 }
 
-@media (max-width: 786px) {
+@media (max-width: 500px) {
     body {
         font-size: 14px;
     }
