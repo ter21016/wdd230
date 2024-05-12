@@ -1,5 +1,4 @@
 
-
 document.addEventListener("DOMContentLoaded", function () {
     // Get current year and set it in the footer
     const currentYear = new Date().getFullYear();
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mainElement = document.querySelector('body');
 
     hamburgerElement.addEventListener('click', () => {
-        /*navElement.classList.toggle('open');*/
+      
         if (navElement.style.display=== 'flex'){
             navElement.style.display= 'none';
         }
@@ -30,4 +29,4 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener('click', () => {
         mainElement.classList.toggle('darkMain');
     });
-});
+})
