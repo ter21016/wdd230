@@ -1,5 +1,3 @@
-
-
 :root {
     --base: rgb(244, 235, 218);
     --dark-blue: #323d4f;
@@ -7,82 +5,24 @@
     --seafoam: #9eb4a7;
     --dead-salmon: #e2b094;
     --sunshine: #fff4cd;
-    
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
-
-
-body{
+body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-   
 }
 
-a {
-    font-weight: 500;
-    font-size: 1rem;
-    font-family: var(--heading-txt);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+header {
+    background-color: #323d4f;
+    display: grid;
+    grid-template-columns: 150px auto;
 }
 
-
-
-main{
-    background-color: #e2b094;
-}
-
-
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-
-.event-card {
-    background-color: white;
-}
-
-.button a, .button a:visited, .button a:active {
-    color: black;
-}
-
-.button a:hover {
-    color: var(--dark-blue);
-}
-
-
-#action-menu a:hover, #spotlight a:hover {
-    color: var(--haze-blue);
-}
-
-
-
-h1 {
-    padding: 2.5em;
-    font-size: 70px;
-    color:#323d4f;
-    
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1rem;
-    position: relative;
-    left: 6rem;
-    
-    
-}
-
-nav a {
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 1rem;
-    color: white;
-}
-
-ul.menuLinks{
-    display: flex;
+ul.menuLinks {
     justify-content: flex-end;
 }
 
@@ -98,13 +38,51 @@ ul.menuLinks li.active a {
     color: black;
 }
 
+a {
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: var(--heading-txt);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
 
+main {
+    background-color: white;
+}
 
-header {
-    background-color: #323d4f;
-    display: grid;
-    grid-template-columns: 150px auto;
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
+.event-card {
+    background-color: white;
+}
+
+.button a, .button a:visited, .button a:active {
+    color: black;
+}
+
+.button a:hover {
+    color: var(--dark-blue);
+}
+
+#action-menu a:hover, #spotlight a:hover {
+    color: var(--haze-blue);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    position: relative;
+    left: 6rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1rem;
+    color: white;
 }
 
 #hero-img {
@@ -114,17 +92,15 @@ header {
     display: flex;
 }
 
-#hero-msg{
-   
+
+#hero-msg {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-       
-  }
-  
+}
+
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
@@ -132,96 +108,119 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
 }
+h1{
+    font-weight: 700;
+}
+ .home-title {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 35px;
+    font-size: 60px;
+    color: #323d4f;
+    
+} 
+
+#para {
+    font-size: 40px;
+    color: #323d4f;
+    align-items: center;
+    font-family: Helvetica;
+}
+
+.book {
+    color: black;
+    text-decoration: none;
+    font-weight: 100%;
+    
+      
+} 
+
 .button-box {
     text-align: center;
     display: inline-block;
-
-    margin: 0 0 1rem 0;
+    margin: 25px;
     padding: 1rem;
     border: 1px solid transparent;
     border-radius: 50px;
-    
-    background-color: #9eb4a7;
+    background-color: #eb9661;
     font-size: .9rem;
     cursor: pointer;
 }
-#para{
+
+#myButton {
     font-size: 2rem;
-    color: #323d4f;
-    align-items: center;
-    
-    
-
-}
-
-#myButton{
-    font-size:  2rem;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
     width: 100%;
-    box-sizing:initial;
+    box-sizing: initial;
     text-align: left;
     padding: .25rem 2vw;
-    display:none
+    display: none;
 }
 
-
-
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto; /* Two rows: one for action items, one for events */
+    gap: 2rem;
+}
 
 #action-menu {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-   
-    grid-row: 1/2;
-    position: relative;
-    grid-gap: 20px;
-  
-   
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns for action items */
+    gap: 2rem;
+    text-align: center;
+    padding: 100px
+
 }
 
 #action-menu h2 {
-    text-align: center;
-    padding-top: 1rem;
+    margin-top: 20px;
     grid-column: 1 / 4;
     color: #323d4f;
 }
-
-
+h3{
+    background-color: #4cc4cc;
+    padding: 1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 .action-card {
-    display: grid;
-  
-    margin: 0;
-    row-gap: 5rem;
-    padding: 10px;
-   
-    color: #323d4f;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+
+}
+
+#events {
+    text-align: center;
+}
+
+#events h2 {
+    margin-bottom: 2rem;
 }
 
 .event-card {
     padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: clamp(300px, 75%, 500px);
     margin: 2.5rem auto;
+    text-align:center;
 }
 
 #events img {
     width: clamp(100px, 100%, 600px);
 }
 
-#events h2 {
-    text-align: center;
-    padding-top: 3rem;
-}
-
 #events h3 {
     margin-top: 1.5rem;
 }
-
 
 #spotlight {
     padding: 10rem;
@@ -247,7 +246,6 @@ header {
     grid-template-rows: 1fr repeat(auto-fill, 5rem);
 }
 
-
 #weather {
     padding: 3rem;
     text-align: center;
@@ -256,18 +254,136 @@ header {
 footer {
     padding: 2rem;
     text-align: center;
-    background-color: #323d4f;
-    color: white;
-
+    background-color: #EFF9F9;
+    color: #2f2f2f;
+    font-size: 20px;
 }
 
-footer .logo {
-    width: clamp(50px, 50%, 150px);
-    height: auto;
-    aspect-ratio: 1 / 1;
+
+
+/* Existing CSS omitted for brevity */
+
+/* Mobile View CSS */
+
+   /* Existing CSS omitted for brevity */
+
+/* Existing CSS omitted for brevity */
+
+@media (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        position: static;
+        left: 0;
+    }
+
+    nav a {
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+    }
+
+    #action-menu {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .action-card {
+        padding: 1rem;
+    }
+
+    #events {
+        text-align: center;
+    
+    }
+
+    .event-card {
+        width: 90%;
+        padding: 1rem;
+        margin: 1rem auto;
+        
+    }
+
+    #hero-box {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        position: relative;
+        height: 50vh;
+        overflow: hidden;
+    }
+
+    #hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #hero-msg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 1rem;
+        text-align: center;
+        color: white; /* Ensures text is visible over the image */
+    }
+
+    .home-title {
+        font-size: 1.5rem;
+    }
+
+    #para {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .button-box {
+        margin: 1rem 0;
+    }
+
+    .button a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #spotlight {
+        padding: 1rem;
+        margin-top: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #spotlight h2 {
+        font-size: 1.5rem;
+    }
+
+    .spotlight-card {
+        padding: 1rem;
+    }
+
+    #weather {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: 0.875rem;
+    }
 }
 
-@media (max-width: 500px) {
+
+/* @media (max-width: 500px) {
     body {
         font-size: 14px;
     }
@@ -362,7 +478,4 @@ ul.menuLinks.open li {
     display: flex;
 }
 
-}  
-
-
-
+} */
