@@ -28,13 +28,18 @@ header {
 }
 
 nav {
-    display: none;
+    display: flex;
+    justify-content:center;
     flex-direction: column;
     list-style: none;
     background-color: var(--dark-blue);
     color: #fff;
 }
 
+ nav {
+    max-width: 700px;
+    margin: 1rem auto;
+  }  
 nav a {
     padding: 1rem;
     text-align: center;
@@ -47,26 +52,30 @@ nav a:hover {
     color: var(--dark-blue);
 }
 
-#menu {
+ #menu {
     font-size: 1.5rem;
     border: 0;
-    background: none;
+    /* background: none; */
     color: #fff;
-}
-
-#menu::before {
+}  
+ /* #menu::before {
     content: "☰";
 }
 
 #menu.open::before {
     content: "✖";
-}
+}  */
 
-.navigation.open {
+/* .navigation.open {
     display: flex;
-}
+} */
 
-
+/* header .navigation{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} */
 
 #hero-box{
     grid-column: 1/4;
@@ -118,7 +127,7 @@ nav a:hover {
 }
 
 
-.button-box {
+ .button-box {
     display: inline-block;
     padding: 1rem;
     background-color: #fb8500;
@@ -130,7 +139,7 @@ nav a:hover {
     color: black;
     text-decoration: none;
     font-size: 1rem;
-}
+} 
 
 .grid-container {
     display: grid;
@@ -204,26 +213,79 @@ footer{
     font-size: 20px;
 }
 
-@media screen and (min-width: 40rem) {
-    .navigation {
-        display: flex;
-        flex-direction: row;
+@media (max-width: 500px) {
+
+
+     body{
+        font-size: 11px;
     }
-    .navigation a {
-        padding: 0 1rem;
+    header{
+        flex-direction: column;
+        text-align: center;
+    } 
+    .home-title{
+        font-size: 1.5rem;
+        
     }
     #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #c71e1e;
+         position: absolute;
+        top: 1rem;
+        right: 1rem;
+      
+    }
+    
+    #menu::before {
+        content: "☰";
+    }
+    
+    #menu.open::before {
+        content: "❤️";
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: #6c1313;
+        color: #fff;
+    }
+    
+    .navigation a {
         display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
     }
-
-    .grid-container {
-        grid-template-columns: 1fr 1fr;
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
     }
-
-    #action-menu {
-        grid-template-columns: 1fr 1fr 1fr;
+    
+    /* when the button is clicked - the open class is toggled (added/removed) */
+    .open a {
+        display: block;
     }
-} 
+    
+     .active::before {
+        content: "📍"; 
+      /* just a wayfinding symbol for the user */
+     } 
+    .active {
+      color: yellow;
+    }
+    .stuff {
+        margin: .5m;
+        border: 1px solid rgba(0,0,0,.1);
+        background-color: #bed;
+        max-width: 580px;
+        height: 100vh;
+        
+    } 
 
-
-
+}

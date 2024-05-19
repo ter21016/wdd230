@@ -27,7 +27,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="scripts/getDates.js"></script>
+    <script src="scripts/getDates.js" defer></script>
 
  
 </head>
@@ -36,10 +36,10 @@
         <img src="images/jessica.jpg" alt="Jesica Terry Profile" width="65" height="75">
         <h1>Jessica Terry</h1>
         <img id="darkMode" src="images/moon-dark-theme-svgrepo-com.svg" alt="dark mode" />
-        <button id="myButton"></button>
+      
     </header>
-        
-    <nav id="animateme">
+   
+    <!-- <nav id="animateme">
         
            
             <ul class="menuLinks">
@@ -50,8 +50,15 @@
                 <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
                 <li><a href="#">Form</a></li>
             </ul>
+    </nav> -->
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="#" title="Home">Home</a>
+        <a href="chamber/index.html" title="Chamber" class="active">Chamber</a>
+        <a href="week01/chamber-site-plan.html" title="Site Plan">site-plan</a>
+        <a href="#" title="History">Products</a>
+        <a href="#" title="Join us">Join Us</a>
     </nav>
-    
     
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
