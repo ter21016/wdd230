@@ -1,207 +1,312 @@
 
+:root {
+    --base: rgb(244, 235, 218);
+    --dark-blue: #323d4f;
+    --haze-blue: #4c6372;
+    --seafoam: #eff9f9;
+    
+    --sunshine: #fff4cd;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
+
 body {
-    font-family: 'Courier New', Courier, monospace;
-  
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 header {
-    color: white;
-    text-align: center;
+    background-color: var(--dark-blue);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-    background-color: rgb(0, 64, 85);
- }
-#darkMode{
-    position: absolute;
-   
-    
-   
-    top: 1rem; 
-    right: 1rem;
-    width: 40px;
-    cursor: pointer;
-    background-color: #fff;
-    
+    padding: 1rem;
+    font-size: 20px;
 }
 
-.darkMain{
-    background-color: black;
-    color: white;
+nav {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--dark-blue);
+    color: #fff;
 }
 
-.card {
-        display: flex;
-        flex-direction: column;
-        border: solid 1px ;
-        border-radius: 10px;
-        list-style-type: none;
+ nav {
+    max-width: 700px;
+    margin: 1rem auto;
+  }  
+nav a {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
 }
 
-.list {
-    list-style-type: none;
+nav a:hover {
+    background-color: #bbb;
+    color: var(--dark-blue);
 }
 
-.card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-     margin: 30px;
+ #menu {
+    font-size: 1.5rem;
+    border: 0;
+    /* background: none; */
+    color: #fff;
+}  
+ #menu::before {
+    content: "☰";
 }
 
-h2 {
-    font-size: 30px;
-    margin: 1rem;
-
-}
-
-.card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-    grid-template-rows: auto;
-    border-radius: 5px;
-}
-
-h3 {
-    padding: 20px;
-    background-color: rgb(127, 180, 236);
-    margin: 0px;
-}
-
-.card-header {
-    flex-direction: row;
-    border-radius: 5px;
-    background: rgb(167, 221, 243);
-}
-
-header img {
-    max-width: 180px;
-    border-radius: 6px;
-    margin: 40px 40px;
-    box-shadow: 5px 5px #13121244;
-     width: 10%;
-    height: auto;
-    border-radius: 5px;
-}
-
-header h1 {
-     margin-top: 0;
-    font-size: 2.5em;
-    /* background-color: ; */
-}
-nav li {
-    display: inline-block;
-     font-size: 30px;
-     margin-right: 80px;
+#menu.open::before {
+    content: "✖";
 } 
 
+ .navigation.open {
+    display: flex;
+} 
 
 header .navigation{
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-nav {
-    background-color: rgb(181, 232, 252);
-    font-size: 25px; 
-    display: flex;
-    justify-content: space-between;
-}
+} 
 
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  
-}
-
-
-        
-footer {
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+ #hero-msg {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}  
+
+ #hero-msg{
+   
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
     flex-direction: column;
-    background-color: rgb(0, 64, 85);
-    color: #fff;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+ }
+
+
+
+.home-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    padding: 35px;
+    color: var(--dark-blue);
+   
 }
 
-#lastModified{
-    font-size: 1rem;
+
+ .button-box {
+     display: inline-block; 
     padding: 1rem;
-
+    background-color: #fb8500;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
- .hero {
-	margin: 10px auto;
-	position: relative;
-	border: 1px solid rgba(0, 0, 0, .1);
-	height: auto;
+.button-box a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+} 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
 }
 
-.hero img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+#action-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
 }
 
-.herolabel {
-	position: absolute;
-	top: 30px;
-	left: 30px;
-	background: radial-gradient(#fff, #4D5B97);
-	border: 1px solid rgba(0, 0, 0, .75);
-	padding: 1.5rem;
-	box-shadow: 0 0 3rem #fff;
-	opacity: 0.75;
-	
+#action-menu h2 {
+    margin-bottom: 1rem;
+    color: var(--dark-blue);
+    grid-column: 1/4;
 }
 
-.herolabel p {
-	margin: 0;
-	padding: .25rem;
-	font-weight: 700;
-	font-size: 2rem;
-	font-family: "Great Vibes", serif;
-}
-iframe {
-	width: 100%;
-	height: 20em;
+.action-card {
+    background-color: var(--seafoam);
+    padding: 1rem;
+    border-radius: 10px;
 }
 
-.label {
-	font-family: Arial, sans-serif;
-	font-weight: 700;
+.action-card h3 {
+    color: var(--dark-blue);
 }
 
-#visits {
-	color: navy;
-	font-weight: bolder;
-	font-size: larger;
+.action-card p {
+    color: var(--dark-blue);
 }
 
+#events {
+    background-color: var(--sunshine);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.event-card {
+    margin-bottom: 1rem;
+}
+
+.event-card h3 {
+    color: var(--dark-blue);
+}
+
+.event-card p {
+    color: var(--dark-blue);
+}
+
+#spotlight {
+    padding: 1rem;
+    background-color: var(--base);
+    border-radius: 10px;
+}
+
+#weather {
+    padding: 1rem;
+    background-color: var(--base);
+    border-radius: 10px;
+}
+
+footer{
+    padding: 2rem;
+    text-align: center;
+    background-color: #eff9f9;
+    color: #2f2f2f;
+    font-size: 20px;
+}
+
+/* Add these rules to your existing base.css or larger.css files */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.sidebar {
+    background-color: var(--seafoam);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.main-content {
+    padding: 1rem;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.sidebar {
+    background-color: var(--seafoam);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+    
 
 
 @media (max-width: 500px) {
-     body {
-        font-size: 14px;
+
+
+     body{
+        font-size: 11px;
     }
-    
-    header {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .image-gallery img:hover {
+        transform: none;
+    }
+    header{
         flex-direction: column;
         text-align: center;
     } 
-
+    .home-title{
+        font-size: 1.5rem;
+        
+    }
     #menu {
         font-size: 1.5rem;
         border: 0;
         background: none;
-        color: #000;
+        color: #c71e1e;
          position: absolute;
         top: 1rem;
         right: 1rem;
@@ -220,10 +325,12 @@ iframe {
         display: flex;
         flex-direction: column;
         list-style: none;
-        background-color: #333;
+        background-color: #6c1313;
         color: #fff;
     }
-    
+    nav{
+        display: none;
+     }
     .navigation a {
         display: none;
         padding: 1rem;
@@ -242,21 +349,20 @@ iframe {
         display: block;
     }
     
-    .active::before {
+     .active::before {
         content: "📍"; 
       /* just a wayfinding symbol for the user */
-    }
+     } 
     .active {
       color: yellow;
     }
     .stuff {
-        margin: 1px;
+        margin: .5m;
         border: 1px solid rgba(0,0,0,.1);
         background-color: #bed;
         max-width: 580px;
         height: 100vh;
         
-    }
-    
-}  
+    } 
 
+}

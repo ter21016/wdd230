@@ -3,67 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon"  href="images/favicon.ico">
-    <title>Jessica Terry - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Lima chamber of commerce website">
+    <meta name="author" content="Jesica Terry">
 
-    
-    <meta name="description" 
-        content="WDD 230 - Web Frontend Development. Jessica Terry - Course assigment portal">
-    <meta property="og:title" content="Jessica Terry - WDD 230 - Web Frontend Development" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url"  content="https://github.com/ter21016/wdd230/blob/main/index.htmll" />
-    <meta name="author" content=" Jessica Terry ">
-    
-    <meta property="og:image" content="https://github.com/ter21016/wdd230/images/OIP.jpeg">
+    <meta property="og:title" content="Lima Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.touristsecrets.com/wp-content/uploads/2019/09/34121237166_267b3bccbc_k.jpg">
+    <meta property="og:url" content="https://ter21016.github.io/wdd230/chamber/index.html">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Oswald:wght@400;500&display=swap');
+    </style>
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link  rel="stylesheet" href="styles/larger.css" >
-    <link rel="stylesheet"  href="styles/base.css"  >
-    
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="scripts/getDates.js" defer></script>
-
- 
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Lima Chamber of Commerce | Building Community</title>
+    <script src="scripts/chamber.js" defer></script>
+  
 </head>
+
 <body>
-    <header>
-        <img src="images/jessica.jpg" alt="Jesica Terry Profile" width="65" height="75">
-        <h1>Jessica Terry</h1>
-        <img id="darkMode" src="images/moon-dark-theme-svgrepo-com.svg" alt="dark mode" />
-      
-    </header>
    
- 
-    <button id="menu"></button>
-    <nav class="navigation">
-        <a href="#" title="Home">Home</a>
-        <a href="chamber/index.html" title="Chamber" class="active">Chamber</a>
-        <a href="week01/chamber-site-plan.html" title="Site Plan">site-plan</a>
-        <a href="#" title="History">Products</a>
-        <a href="#" title="Join us">Join Us</a>
-    </nav>
-    
-    <main>
-             
-        <
-	
+    <header>
         
-        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d21431.720992028866!2d-122.18220667780218!3d47.82089337318682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d47.8351379!2d-122.21430459999999!4m5!1s0x5490090577e70c4f%3A0x161dc74d727df466!2sMaltby%2C%20Washington!3m2!1d47.8050984!2d-122.1131817!5e0!3m2!1ses-419!2sus!4v1716269595794!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </main>
+       <button id="menu">&#9776;</button>
+       <nav class="navigation">
+            <a href="index.html" title="Home">Home</a>
+            <a href="#" title="Discover">Discover</a>
+            <a href="#" title="History"></a>
+            <a href="join.html" title="Join Us">Join Us</a>
+        </nav>
+    </header>
+
+    <div id="hero-box">
+        <img id="hero-img" src="images/Peru-city.webp" alt="city of Lima" width="1600" height="800">
     
+   </div>
+       <section id="hero-msg">
+          <h1 class="home-title">Lima Chamber of Commerce</h1>
+           
+           <div class='button-box'>
+               <a class='book' href="join.html">Join the Chamber</a>
+           </div>
+       </section>
+
+    <main class="grid-container">
+        <aside class="sidebar">
+            <div id="visit-message"></div>
+            <h2>Demographics</h2>
+            <p>Lima is home to over 10 million residents...</p>
+            <h2>Statistics</h2>
+            <p>Some key statistics about Lima...</p>
+            <h2>Events</h2>
+            <p>Upcoming events in Lima...</p>
+            <h2>Attractions</h2>
+            <p>Popular tourist attractions in Lima...</p>
+
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        </aside>
+        
+        <section class="content">
+            <h2>Local Photos</h2>
+            <div class="image-gallery">
+                <img src="images/0ZTLAgYC-1.webp" alt="Photo 1"  loading ="lazy" width="400px"  height="600px">
+                <img src="images/lima1.webp" alt="Photo 2"  loading ="lazy" width="400px"  height="600px">
+                <img src="images/OIP.webp" alt="Photo 3"  loading ="lazy" width="400px"  height="600px">
+                <img src="images/Peru-city.webp" alt="Photo 4"  loading ="lazy" width="400px"  height="600px">
+                <img src="images/0ZTLAgYC-1.webp" alt="Photo 5"  loading ="lazy" width="400px"  height="600px">
+                <img src="images/R (1).webp" alt="Photo 6"  loading ="lazy" width="400px"  height="600px">
+            </div>
+        </section>
+    </main>
+
+   
     <footer>
-        <p >    &copy; <span id="currentYear"></span> 🌺Jessica Terry🌺 Peru  <img src="images/download.jpg" alt="Peru flag"> </p>
-        <p><br><br> <span id="lastModified"></span></p>
-       
-            
+        <p>Jessica Terry | WDD 230 | Lima Chamber Of Commerce</p>
+        <p>ter21016@byui.edu | (555) 555-5555</p>
+        <p><span id="lastModified"></span></p>
     </footer>
 </body>
-
-</html> 
-
-
+</html>
 
