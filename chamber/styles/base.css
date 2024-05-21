@@ -58,24 +58,24 @@ nav a:hover {
     /* background: none; */
     color: #fff;
 }  
- /* #menu::before {
+ #menu::before {
     content: "☰";
 }
 
 #menu.open::before {
     content: "✖";
-}  */
+} 
 
-/* .navigation.open {
+ .navigation.open {
     display: flex;
-} */
+} 
 
-/* header .navigation{
+header .navigation{
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-} */
+} 
 
 #hero-box{
     grid-column: 1/4;
