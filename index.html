@@ -1,7 +1,5 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +7,12 @@
     <title>Jessica Terry - WDD 230 - Web Frontend Development</title>
 
     
-    <meta name="description" content=" Jessica Terry - WDD 230 - Web Frontend Development. This is the WDD 230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD 230 course">
-    <meta name="author" content=" Jessica Terry ">
-
-    <meta property="og:url"  content="https://github.com/ter21016/wdd230/blob/main/index.html" />
-    <meta property="og:type" content="website" />
+    <meta name="description" 
+        content="WDD 230 - Web Frontend Development. Jessica Terry - Course assigment portal">
     <meta property="og:title" content="Jessica Terry - WDD 230 - Web Frontend Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url"  content="https://github.com/ter21016/wdd230/blob/main/index.htmll" />
+    <meta name="author" content=" Jessica Terry ">
     
     <meta property="og:image" content="https://github.com/ter21016/wdd230/images/OIP.jpeg">
 
@@ -39,18 +37,7 @@
       
     </header>
    
-    <!-- <nav id="animateme">
-        
-           
-            <ul class="menuLinks">
-                
-            
-                <li ><a href="#" >Home</a></li>
-                <li class="active"><a href="chamber/index.html">Chamber</a></li>
-                <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-                <li><a href="#">Form</a></li>
-            </ul>
-    </nav> -->
+ 
     <button id="menu"></button>
     <nav class="navigation">
         <a href="#" title="Home">Home</a>
@@ -61,6 +48,19 @@
     </nav>
     
     <main>
+             
+        <div class="hero">
+
+            <picture>
+                <source srcset="images/templos.webp" media="(max-width: 400px)">
+                <source srcset="images/templom.webp" media="(max-width:960px)">
+                <img src="images/templol.webp" alt="Templo Mexico" width="1200" height="750"> 
+            </picture>
+			
+			<div class="herolabel">
+				<p>Mexico</p>
+			</div>
+		</div>
         <h1>WDD 230: Web Frontend Development</h1>
         <hr>
         
@@ -84,7 +84,8 @@
                         </li>
                         <li>Week 03: <a href="week03/images/landscape.webp">WebP</a>|
                              <a href="week03/lazyload.html">LazyLoad</a> |
-                             <a href="week03/responsive-images.html">responsive-images</a>
+                             <a href="week03/responsive-images.html">Responsive-images</a>|
+                             <a href="week03/bom.html">Book of Mormon</a>
                         </li> |
                         <li>Week 04: </li>
                         <li>Week 05: </li>
@@ -96,15 +97,19 @@
             <section class="card">
                 <div class="card-header">
                     <h2>Information</h2>
-                        <p>Lima, Peru</p>
+                       
                         <p>76°F - Sunshine</p>
+                        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
                     
                          
                </div>
            </section>
             
         </div>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d21431.720992028866!2d-122.18220667780218!3d47.82089337318682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d47.8351379!2d-122.21430459999999!4m5!1s0x5490090577e70c4f%3A0x161dc74d727df466!2sMaltby%2C%20Washington!3m2!1d47.8050984!2d-122.1131817!5e0!3m2!1ses-419!2sus!4v1716269595794!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
+    
     <footer>
         <p >    &copy; <span id="currentYear"></span> 🌺Jessica Terry🌺 Peru  <img src="images/download.jpg" alt="Peru flag"> </p>
         <p><br><br> <span id="lastModified"></span></p>

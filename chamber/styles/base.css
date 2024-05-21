@@ -104,7 +104,7 @@ nav a:hover {
 #hero-msg{
    
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -253,7 +253,9 @@ footer{
         background-color: #6c1313;
         color: #fff;
     }
-    
+    nav{
+        display: none;
+     }
     .navigation a {
         display: none;
         padding: 1rem;
