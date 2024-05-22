@@ -82,14 +82,46 @@
             <h2>Local Photos</h2>
             <div class="image-gallery">
                 <picture>
-                <img src="images/0ZTLAgYC-1.webp" alt="Photo 1"  loading="lazy" width="250px"  height="350px">
+                    <source srcset="images/0ZTLAgYC-1.webp" type="image/webp">
+                    <img src="images/0ZTLAgYC-1.jpg" alt="Photo 1" loading="lazy" width="250" height="350">
+                </picture>
+                <picture>
+                    <source srcset="images/lima1.webp" type="image/webp">
+                    <img src="images/lima1.jpg" alt="Photo 2" loading="lazy" width="400" height="600">
+                </picture>
+                <picture>
+                    <source srcset="images/OIP.webp" type="image/webp">
+                    <img src="images/OIP.jpg" alt="Photo 3" loading="lazy" width="400" height="600">
+                </picture>
+                <picture>
+                    <source srcset="images/Peru-city.webp" type="image/webp">
+                    <img src="images/Peru-city.jpg" alt="Photo 4" loading="lazy" width="400" height="600">
+                </picture>
+                <picture>
+                    <source srcset="images/ViewImage.webp" type="image/webp">
+                    <img src="images/ViewImage.jpg" alt="Photo 5" loading="lazy" width="400" height="600">
+                </picture>
+                <picture>
+                    <source srcset="images/R.webp" type="image/webp">
+                    <img src="images/R.webp " alt="Photo 6" loading="lazy" width="400" height="600">
+                </picture>
+                
+                <!-- <img src="images/0ZTLAgYC-1.webp" alt="Photo 1"  loading="lazy" width="250px"  height="350px">
                 <img  src="images/lima1.webp" alt="Photo 2"  loading="lazy" width="400px"  height="600px">
                 <img  src="images/OIP.webp" alt="Photo 3"  loading="lazy" width="400px"  height="600px">
                 <img src="images/Peru-city.webp" alt="Photo 4"  loading="lazy" width="400px"  height="600px">
                 <img  src="images/ViewImage.webp" alt="Photo 5"  loading="lazy" width="400px"  height="600px">
                 <img  src="images/R (1).webp" alt="Photo 6"  loading="lazy" width="400px"  height="600px">
-                </picture>
+                </picture> -->
             </div>
+            
+            <hr>
+            <p><span class="label">Date.now(): </span> <span id="today"></span> &nbsp;<span class="smaller">(milliseconds)</span></p>
+            <p><span class="label">Next Christmas: </span> <span id="christmas"></span> &nbsp; <span class="smaller">(milliseconds)</span></p>
+            <p><span class="label">🎄Christmas - Date: </span> <span id="christmasDate"></span></p>
+            <hr>
+            <p><span class="label">Days until Christmas: </span> <span id="daysleft"></span></p>
+        
         </section>
     </main>
 

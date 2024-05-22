@@ -259,7 +259,7 @@ h2{
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    /* grid-template-columns: 1fr 3fr; */
     gap: 2rem;
     padding: 1rem;
 }
@@ -286,7 +286,19 @@ h2{
     transform: scale(1.05);
 }
 
-    
+.label {
+	display: block;
+	width: 175px;
+	font-weight: 700;
+	color: navy;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.smaller {
+	font-size: smaller;
+}
+
 
 
 @media (max-width: 500px) {
