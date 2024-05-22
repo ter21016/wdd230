@@ -222,15 +222,27 @@ footer{
 }
 
 .sidebar {
+    
+    display: block;
+    position: ab;
     background-color: var(--seafoam);
-    padding: 1rem;
+    padding: 20px;
     border-radius: 10px;
+    
 }
 
 .main-content {
     padding: 1rem;
 }
-
+.content{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 4px 4px 8px #858585;
+    padding: 10px;
+    border: 1px solid #858585;
+}
 .image-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -364,7 +376,10 @@ footer{
         height: 100vh;
         
     } 
-    
+    .content{
+        width: 100%;
+        height: auto;
+    }
      footer{
         font-size: 13px;
      }
