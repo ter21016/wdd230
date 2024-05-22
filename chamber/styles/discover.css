@@ -221,7 +221,7 @@ h2{
     
     display: block;
     position: ab;
-    background-color: var(--seafoam);
+    background-color: #eff9f9;
     padding: 20px;
     border-radius: 10px;
     
@@ -259,7 +259,7 @@ h2{
 
 .grid-container {
     display: grid;
-    /* grid-template-columns: 1fr 3fr; */
+    
     gap: 2rem;
     padding: 1rem;
 }
@@ -377,8 +377,9 @@ h2{
       color: yellow;
     }
     .stuff {
-        margin: .5m;
+        margin: 5px;
         border: 1px solid rgba(0,0,0,.1);
+        color: red;
         background-color: #bed;
         max-width: 580px;
         height: 100vh;
