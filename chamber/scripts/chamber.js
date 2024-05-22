@@ -41,7 +41,6 @@ localStorage.setItem("numVisits-ls", numVisits);
 
 // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
 
-
 document.addEventListener("DOMContentLoaded", function() {
   const visitMessage = document.getElementById('visitMessage');
   const lastVisit = localStorage.getItem('lastVisit');
