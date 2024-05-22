@@ -220,7 +220,7 @@ h2{
 .sidebar {
     
     display: block;
-    position: ab;
+    position: relative;
     background-color: #eff9f9;
     padding: 20px;
     border-radius: 10px;
