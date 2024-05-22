@@ -364,5 +364,8 @@ footer{
         height: 100vh;
         
     } 
-  
+    
+     footer{
+        font-size: 13px;
+     }
 }
