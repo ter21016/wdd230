@@ -90,16 +90,9 @@ header .navigation{
     height: 100%;
     object-fit: cover;
     opacity: 0.5;
-}
- #hero-msg {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-}  
 
+}
+ 
  #hero-msg{
    
     position: absolute;
@@ -216,11 +209,14 @@ footer{
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 1fr;
+  
     gap: 2rem;
     padding: 2rem;
 }
-
+h2{
+    font-size: 30px;
+}
 .sidebar {
     
     display: block;
@@ -376,6 +372,21 @@ footer{
         height: 100vh;
         
     } 
+    h2{
+        font-size: 20px;
+    }
+    #hero-msg{
+        position: absolute;
+        top: 20%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+       
+    }
     .content{
         width: 100%;
         height: auto;
