@@ -1,0 +1,28 @@
+{
+    "family-name": "Terry",
+    "dateMoveToWard": "Jun-01-2014",
+    "numberOfPeopleInFamily": 5,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Alex",
+            "gender": "Male",
+            "dateOfBirth": "Jul-16-2020"
+        },
+        {
+            "name": "Pepe",
+            "gender": "Male",
+            "dateOfBirth": "Jan-03-1995"
+        },
+        {
+            "name": "Mary",
+            "gender": "Female",
+            "dateOfBirth": "Jul-20-2018"
+        },
+        {
+            "name": "Joseph",
+            "gender":"Male",
+            "dateOfBirth": "Nov-20-2015"
+        }
+    ]
+}
