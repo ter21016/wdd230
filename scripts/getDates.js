@@ -37,6 +37,8 @@ if (numVisits !== 0) {
 numVisits++;
 
 // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
-localStorage.setItem("numVisits-ls", numVisits);
+localStorage.setItem("numOfVisits-ls", JSON.stringify(numOfVisits));
 
 // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
+year.textContent = getDate().year;
+date.textContent = `${getDate().date} ${getDate().time}`;

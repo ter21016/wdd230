@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link  rel="stylesheet" href="styles/larger.css" >
     <link rel="stylesheet"  href="styles/base.css"  >
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-base.css">
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,8 +49,9 @@
     </nav>
     
     <main>
-        <form action="record.html" method="get">
-            <label class="is-passwd-same"></label>
+        <form action="record.html" method="get" class="wt1">
+            <fieldset>
+            <legend>Team Activity - Form</legend> 
             <label>Username* <input type="text" name="username" id="username" required></label>
 
             <label>Password* <input type="password" name="password" id="password" required pattern="\S{8,}"
@@ -61,25 +62,32 @@
             <label>Email* <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
                     title="Please enter a valid email address" required></label>
 
-            <label>Page Rating 
-                <input type="range" name="page-rating" id="page-rating" min="1" max="10" value="1"
-                    step="1" list="rating-values">
-                <datalist id="rating-values">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </datalist>
-            </label>
+            </fieldset>
+
+        
+
+
+            <label for="r">INPUT: range, min, max, datalist, required</label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+	            <option value="0">0</option>
+	            <option value="1">1</option>
+	            <option value="2">2</option>
+	            <option value="3">3</option>
+	            <option value="4">4</option>
+	            <option value="5">5</option>
+                 <option value="6">6</option>
+                <option value="7">7</option>
+                 <option value="8">8</option>
+                 <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+
 
             <input type="submit" value="Post Your Rating">
-        </form>
+            
+    </form>
     </main>
         
 
