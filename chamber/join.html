@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lima chamber of commerce website">
+    <meta name="author" content="Jesica Terry">
+
+    <meta property="og:title" content="Lima Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.touristsecrets.com/wp-content/uploads/2019/09/34121237166_267b3bccbc_k.jpg">
+    <meta property="og:url" content="https://ter21016.github.io/wdd230/chamber/index.html">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Oswald:wght@400;500&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Lima Chamber of Commerce | Building Community</title>
+    <script src="scripts/chamber.js" defer></script>
+  
+</head>
+
+<body>
+   
+    <header>
+        
+       <button id="menu">&#9776;</button>
+       <nav class="navigation">
+            <a href="index.html" title="Home">Home</a>
+            <a href="discover.html">Discover</a>
+          <a href="join.html" class="active">Join Us</a>
+        </nav>
+
+        
+    </header>
+
+    <div id="hero-box">
+        <img id="hero-img" src="images/0ZTLAgYC-1.webp" alt="city of Lima" width="1200" height="800">
+    
+   </div>
+       <section id="hero-msg">
+          <h1 class="home-title">Lima Chamber of Commerce</h1>
+           
+           <div class='button-box'>
+               <a class='book' href="join.html">Join the Chamber</a>
+           </div>
+       </section>
+    
+
+    <main>
+        <h1>Became a Proud Member of the Lima Chamber</h1>
+        <form method="get" action="thankyou.html" class="wf1">
+                        <!-- <fieldset>
+                            <div class="legend">
+                                <label >First Name<span class="asterisk">*</span> <input type="text" name="fname"
+                                id="fname" required></label>
+
+                                <label>Last Name<span class="asterisk">*</span> <input type="text" name="lname"
+                                    id="lname" required></label>
+
+                                <label>Title/Postion <input type="text" name="title" id="title"
+                                    pattern="/^[A-Za-z -]{7,}$/"></label>
+
+                                <label>Email address<span class="asterisk">*</span> <input type="email" name="email"
+                                    id="email" required></label>
+
+                                <label>Phone number<span class="asterisk">*</span> <input type="tel" name="phone"
+                                    id="phone" required></label>
+
+                                <label>Business/Organization name<span class="asterisk">*</span> <input type="text"
+                                    name="company-name" id="company-name" required></label> -->
+                             <fieldset>
+                                 <legend>Applicant Information</legend>
+                                <label >First Name* <input type="text" name="fname" required></label>
+                                 <label >Last Name* <input type="text" name="lname" required></label>
+                                 <label >Phone <input type="tel" name="phone" placeholder="0792237784"></label>
+                                 <label >Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                                 <label >Business/Organization* <input type="text" name="business" placeholder="chase" required></label>
+                            </fieldset>
+
+                                
+
+                        
+                            <fieldset>
+                            <label class="side-by-side np"> <input type="radio" name="membership" id="np-membership"> NP
+                                Membership</label>
+                            <label class="side-by-side bronze"> <input type="radio" name="membership" id="bronze-membership"> Bronze
+                                Membership</label>
+                            <label class="side-by-side silver"> <input type="radio" name="membership" id="silver-membership"> Silver
+                                Membership</label>
+                            <label class="side-by-side gold"> <input type="radio" name="membership" id="gold-membership"> Gold
+                                Membership</label>
+
+                            <label>Description<span class="asterisk">*</span> <textarea name="textarea"
+                                    id="textarea"></textarea></label>
+
+                            <label> <input type="hidden" name="timestamp"></label>
+                            </fieldset>
+
+                            <input type="submit" value="Join Chamber">
+                        
+                        
+                        <div class="benefits-box">
+                            <div>
+                                <h2>🙏🏽 NP (Non-Profit) Membership</h2>
+                                <ul>
+                                    <li>Reduced Membership Fees</li>
+                                    <li>Access to Networking Events</li>
+                                    <li>Visibility</li>
+                                    <li>Educational Resources</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>🥉 Bronze Membership</h2>
+                                <ul>
+                                    <li>Enjoy standard membership benefits</li>
+                                    <li>Marketing Opportunities</li>
+                                    <li>Business Workshops</li>
+                                    <li>Access to Member Discounts</li>
+                                </ul>
+                            </div>
+                                
+                            <div>
+                                <h2>🥈 Silver Membership</h2>
+                                <ul>
+                                    <li>Enhanced Visibility</li>
+                                    <li>Event Sponsorship</li>
+                                    <li>Premium Marketing</li>
+                                    <li>Exclusive Workshops</li>
+                                </ul>
+                            </div>
+                                
+                            <div>
+                                <h2>🥇 Gold Membership</h2>
+                                <ul>
+                                    <li>Premier Visibility</li>
+                                    <li>VIP Events</li>
+                                    <li>Marketing Concierge</li>
+                                    <li>Thought Leadership</li>
+                                    <li>Custom Solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+
+
+        </form><!-- </section> -->
+          
+   
+    </main>
+    <footer>
+        <p>Jessica Terry | WDD 230 | Lima Chamber Of Commerce</p>
+        <p>ter21016@byui.edu | (555) 555-5555</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
+
