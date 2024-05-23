@@ -280,7 +280,7 @@ wf1 input[type="checkbox"]{
     margin: 2rem 0 2rem 4rem;
     display: grid;
     grid-template-columns: auto auto ;
-    grid-template-rows: 1/ 3;
+    grid-template-rows: 1/ 3 auto;
     margin: 2rem auto 2rem 2rem;
     padding: 20%;
 }
