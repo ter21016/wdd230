@@ -24,10 +24,13 @@
                     "url":"week02/design.html",
                     "title":"Design Principles"
                 },
-              
+                {
+                    "url":"https://codepen.io/12jessi/pen/BaEvPWo",
+                    "title":"HamButton"
+                },
                 {
                     "url":"week02/bom.html",
-                    "title":"BOM"
+                    "title":"DOM-M"
                 }
             ]
         },
@@ -52,12 +55,8 @@
                     "url":"week03/bom.html",
                     "title":"LocalStorage-BOM"
         
-                },
-                {
-                    "url":"chamber/discover.html",
-                    "title":"Chamber -Discover"
-        
                 }
+                
             ]
         },
         {
@@ -72,11 +71,7 @@
                     "title":"CSS Combinators activity"
         
                 },
-                {
-                    "url":"chamber/join.html",
-                    "title":"Join Us"
-        
-                },
+                
                 {
                     "url":"week04/tablebuilt.html",
                     "title":"HTML Table Activity"
