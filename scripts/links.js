@@ -3,16 +3,17 @@
 const linkBox = document.getElementById('link-box');
 
 const baseUrl = 'https://github.com/ter21016/wdd230/tree/main';
-const linksUrl = '';
+const linksUrl = 'https://github.com/ter21016/wdd230/blob/main/scripts/links.js';
 
 
-const getLinks = async function() {
-    const response = await fetch(linksUrl);
+async function getLinks() {
+    const response = await fetch(linksURL);
     const data = await response.json();
-    // console.log(data);
+    console.log(data);
     displayLinks(data.weeks);
-}
-
+  }
+  
+  getLinks();
 
 const displayLinks = function(data) {
     for (let index = 0; index < data.length; index++) {
