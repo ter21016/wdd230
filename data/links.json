@@ -1,0 +1,78 @@
+{
+    "weeks": [
+        {
+            "week": "week 01",
+            "links": [
+                {
+                    "url":"week01/holygrail.html",
+                    "title":"Hg Layout"
+                },
+                {
+                    "url":"week01/media-query.html",
+                    "title":"mQueries"
+        
+                },
+                {   "url": "",
+                    "title": "Holy Grail"
+                }
+            ]
+        },
+        {
+            "week": "week 02",
+            "links": [
+                {
+                    "url":"week01/holygrail.html",
+                    "title":"Hg Layout"
+                },
+                {
+                    "url":"week01/media-query.html",
+                    "title":"mQueries"
+        
+                }
+            ]
+        },
+        {
+            "week": "week 03",
+            "links": [
+                {
+                    "url":"week01/holygrail.html",
+                    "title":"Hg Layout"
+                },
+                {
+                    "url":"week01/media-query.html",
+                    "title":"mQueries"
+        
+                }
+            ]
+        },
+        {
+            "week": "week 04",
+            "links": [
+                {
+                    "url":"week01/holygrail.html",
+                    "title":"Hg Layout"
+                },
+                {
+                    "url":"week01/media-query.html",
+                    "title":"mQueries"
+        
+                }
+            ]
+        },
+        {
+            "week": "week 05",
+            "links": [
+                {
+                    "url":"week01/holygrail.html",
+                    "title":"Hg Layout"
+                },
+                {
+                    "url":"week01/media-query.html",
+                    "title":"mQueries"
+        
+                }
+            ]
+        }
+
+    ]    
+}

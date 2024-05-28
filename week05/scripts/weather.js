@@ -1,5 +1,5 @@
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
+const currentTemp = document.querySelector('#temperature');
+const weatherIcon = document.querySelector('#graphic');
 const captionDesc = document.querySelector('figcaption');
 
 
