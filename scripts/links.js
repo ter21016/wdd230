@@ -3,7 +3,7 @@
 const linkBox = document.getElementById('link-box');
 
 const baseUrl = 'https://github.com/ter21016/wdd230';
-const linksUrl = 'https://github.com/ter21016/wdd230/blob/main/scripts/links.js';
+const linksUrl = 'https://github.com/ter21016/wdd230/blob/main/data/links.json';
 
 
 async function getLinks() {
