@@ -5,15 +5,15 @@
             "links": [
                 {
                     "url":"week01/holygrail.html",
-                    "title":"Hg Layout"
+                    "title":"Layout"
                 },
                 {
                     "url":"week01/media-query.html",
-                    "title":"mQueries"
+                    "title":"Media-query"
         
                 },
-                {   "url": "",
-                    "title": "Holy Grail"
+                {   "url": "https://codepen.io/12jessi/pen/LYvMmdN",
+                    "title": "JS Pen<"
                 }
             ]
         },
@@ -21,13 +21,13 @@
             "week": "week 02",
             "links": [
                 {
-                    "url":"week01/holygrail.html",
-                    "title":"Hg Layout"
+                    "url":"week02/design.html",
+                    "title":"Design Principles"
                 },
+              
                 {
-                    "url":"week01/media-query.html",
-                    "title":"mQueries"
-        
+                    "url":"week02/bom.html",
+                    "title":"BOM"
                 }
             ]
         },
@@ -35,12 +35,27 @@
             "week": "week 03",
             "links": [
                 {
-                    "url":"week01/holygrail.html",
-                    "title":"Hg Layout"
+                    "url":"week03/images/landscape.webp",
+                    "title":"WebP"
                 },
                 {
-                    "url":"week01/media-query.html",
-                    "title":"mQueries"
+                    "url":"week03/lazyload.html",
+                    "title":"LazyLoad"
+        
+                },
+                {
+                    "url":"week03/responsive-images.html",
+                    "title":"Responsive-images"
+        
+                },
+                {
+                    "url":"week03/bom.html",
+                    "title":"LocalStorage-BOM"
+        
+                },
+                {
+                    "url":"chamber/discover.html",
+                    "title":"Chamber -Discover"
         
                 }
             ]
@@ -49,26 +64,51 @@
             "week": "week 04",
             "links": [
                 {
-                    "url":"week01/holygrail.html",
-                    "title":"Hg Layout"
+                    "url":"https://codepen.io/12jessi/pen/RwmRoYG",
+                    "title":"Pseudo-class"
                 },
                 {
-                    "url":"week01/media-query.html",
-                    "title":"mQueries"
+                    "url":"images/screenshot-2024-05-22-131108.webp",
+                    "title":"CSS Combinators activity"
         
+                },
+                {
+                    "url":"chamber/join.html",
+                    "title":"Join Us"
+        
+                },
+                {
+                    "url":"week04/tablebuilt.html",
+                    "title":"HTML Table Activity"
+        
+                },
+                {
+                    "url":"Form-start/index.html",
+                    "title":"Forms"
                 }
+
             ]
         },
         {
             "week": "week 05",
             "links": [
                 {
-                    "url":"week01/holygrail.html",
-                    "title":"Hg Layout"
+                    "url":"https://codepen.io/12jessi/pen/PovzyZP",
+                    "title":"CSS Pseudo-elements"
                 },
                 {
-                    "url":"week01/media-query.html",
-                    "title":"mQueries"
+                    "url":"week05/new-ward-members.json",
+                    "title":"new-ward-members"
+        
+                },
+                {
+                    "url":"week05/prophets.html",
+                    "title":"Prophets"
+        
+                },
+                {
+                    "url":"week05/weather.html",
+                    "title":"Weather API"
         
                 }
             ]
