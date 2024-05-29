@@ -63,7 +63,6 @@ header {
 }
 
 .card-header{
-    background-color: #9abdeb;
     height: 100%;
 }
 .card {
@@ -169,9 +168,8 @@ footer {
 
  .hero img {
 	width: 100% ;
-    max-width: 400px;
 	height: auto;
-    object-fit: cover;
+    /* object-fit: cover; */
     
 }    
 
@@ -194,7 +192,7 @@ footer {
 	font-size: 2rem;
 	font-family: "Great Vibes", serif;
 }
-iframe {
+#frame {
 	width: 100%;
 	height: 20em;
     margin-left: 10px;
@@ -209,6 +207,7 @@ iframe {
 	color: navy;
 	font-weight: bolder;
 	font-size: larger;
+    margin-top: 10px;
 }
 
 
@@ -227,7 +226,7 @@ iframe {
         font-size: 1.5rem;
         border: 0;
         background: none;
-        color: #000;
+        color: white;
          position: absolute;
         top: 1rem;
         right: 1rem;
@@ -237,10 +236,14 @@ iframe {
     #menu::before {
         content: "☰";
     }
-    
-    #menu.open::before {
-        content: "❤️";
+    .templo{
+        width: 100%;
+        height: 100%;
+        
     }
+     /* #menu.open::before {
+        content: "❤️";
+    }  */
     
     .navigation {
         display: flex;

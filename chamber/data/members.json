@@ -1,0 +1,69 @@
+{
+    "data": [
+      {
+        "name": "The Broom LLC",
+        "address": "123 124th, City, Country",
+        "phone": "+1 (425) 123-4567",
+        "website": "https://www.thebroomcleaningservices.com/",
+        "image": "",
+        "membershipLevel": "images/gold.png"
+      },
+      {
+        "name": "Seven Company",
+        "address": "456 Elm Street, Town, Country",
+        "phone": "+27 (21) 234-5678",
+        "website": "https://sevencompany.info/",
+        "image": "",
+        "membershipLevel": "images/gold.png"
+      },
+      {
+        "name": "Acme Food",
+        "address": "789 Oak Street, Village, Country",
+        "phone": "+27 (31) 345-6789",
+        "website": "https://www.acmefood.com/",
+        "image": "images/acme_uma_1024_appflyer.webp",
+        "membershipLevel": "images/bronze.png"
+      },
+      {
+        "name": "Supply House",
+        "address": "101 Pine Street, Hamlet, Country",
+        "phone": "+27 (41) 456-7890",
+        "website": "https://www.supplyhouse.com",
+        "image": "",
+        "membershipLevel": "images/silver.png"
+      },
+      {
+        "name": "Galaxy Electric",
+        "address": "202 Cedar Street, Village, Country",
+        "phone": "+27 (51) 567-8901",
+        "website": "https://galaxyel.com/",
+        "image": "",
+        "membershipLevel": "images/gold.png"
+      },
+      {
+        "name": "Brimma Solar",
+        "address": "303 Birch Street, Town, Country",
+        "phone": "+27 (61) 678-9012",
+        "website": "https://www.brimmasolar.com/",
+        "image": "images/acme_uma_1024_appflyer.webp",
+        "membershipLevel": "images/np.png"
+      },
+      {
+        "name": "Capstone Sol",
+        "address": "404 Maple Street, City, Country",
+        "phone": "+27 (71) 789-0123",
+        "website": "https://www.capstone-sol.com/",
+        "image": "",
+        "membershipLevel": "images/np.png"
+      },
+      {
+        "name": "Spotless Home",
+        "address": "505 Willow Street, Hamlet, Country",
+        "phone": "+27 (81) 890-1234",
+        "website": "https://spotlesshomesservices.com/",
+        "image": "",
+        "membershipLevel": "images/silver.png"
+      }
+      
+    ]
+  }
