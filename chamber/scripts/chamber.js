@@ -92,71 +92,110 @@ daysElement.textContent = `${daysleft.toFixed(0)} days`;
 
 // Directory//
 
+const requestURL = 'data/members.json';
+let clickState = 'grid';
 
+function displayBusinessGrid(item) {
+    let card = document.createElement('section');
+    let logo = document.createElement('img');
+    let name = document.createElement('h2');
+    let site = document.createElement('a');
+    let phone = document.createElement('p');
+    let address = document.createElement('p');
 
+    logo.setAttribute('src', "./img/" + item.logo);
+    logo.setAttribute('alt', item.name + "'s Logo");
+    name.textContent = item.name;
+    site.setAttribute('href', item.website);
+    site.setAttribute('target', "_blank");
+    site.textContent = item.name + " Website";
+    phone.textContent = item.phone;
+    address.textContent = item.address;
 
-/////////////// API Grid ///////////////////
-/* GitHub link for directory: 'https://raw.githubusercontent.com/klittler-byui/wdd230/main/04-Chamber/04js/directorylist.json' */
-const baseUrl = "https://github.com/ter21016/wdd230/blob/main/chamber/index.html";
-const requestURL = "data/members.json"  ;
+    card.appendChild(logo);
+    card.appendChild(name);
+    card.appendChild(site);
+    card.appendChild(phone);
+    card.appendChild(address);
 
-const Mcards = document.querySelector('.Mcards');
-
-fetch(requestURL)
-.then(function (response) {
-  return response.json();
-})
-.then(function (jsonObject) {
-  console.table(jsonObject);
-  const members = jsonObject['members'];
-  members.forEach(displayMembers);
-});
-
-function displayMembers (member) {
-  let Mcard = document.createElement('section');
-  let name = document.createElement('name');
-  let logo = document.createElement('img');
-  let address = document.createElement('span');
-  let phone = document.createElement('span');
-  let web = document.createElement('a');
-
-  name.textContent = `${member.name}`;
-  address.textContent = `${member.address}`;
-  phone.textContent = `${member.phone}`;
-  web.textContent = `${member.web}`;
-
-  logo.setAttribute('src', member.logoImg);
-  logo.setAttribute('alt', `${member.name} logo`);
-  logo.setAttribute('loading', 'lazy');
-  web.setAttribute("href", member.web);
-  web.setAttribute("target", "_blank");
-
-  Mcard.appendChild(logo);
-  Mcard.appendChild(name);
-  Mcard.appendChild(address);
-  Mcard.appendChild(phone);
-  Mcard.appendChild(web);
-
-  document.querySelector('div.Mcards').appendChild(Mcard);
+    document.querySelector('.bus-cards').appendChild(card);
 }
 
-
-//////// Grid View Toggle Function ///////////
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector(".Mcards");
-
-
-
-gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+function createTable() {
+    let table = document.createElement('table');
+    document.querySelector('.bus-cards').appendChild(table);
 }
+
+function displayBusinessList(item) {
+    let row = document.createElement('tr');
+    let name = document.createElement('p');
+    let site = document.createElement('a');
+    let phone = document.createElement('p');
+    let address = document.createElement('p');
+
+    name.textContent = item.name;
+    site.setAttribute('href', item.website);
+    site.setAttribute('target', '_blank');
+    site.textContent = item.name + ' Website';
+    phone.textContent = item.phone;
+    address.textContent = item.address;
+
+    let td1 = document.createElement('td');
+    let td2 = document.createElement('td');
+    let td3 = document.createElement('td');
+    let td4 = document.createElement('td');
+
+    td1.appendChild(name);
+    td2.appendChild(site);
+    td3.appendChild(phone);
+    td4.appendChild(address);
+
+    row.appendChild(td1);
+    row.appendChild(td2);
+    row.appendChild(td3);
+    row.appendChild(td4);
+
+    document.querySelector('table').appendChild(row);
+}
+
+async function getBusinesses(requestURL, type) {
+    const response = await fetch(requestURL);
+    // console.log(response);
+
+    if (response.ok) {
+        const jsObject = await response.json();
+        // console.log(jsObject);
+
+        const businesses = jsObject['businesses'];
+        
+        if (type === 'grid') {
+            businesses.forEach(displayBusinessGrid);
+        } else if (type=== 'list') {
+            createTable();
+            businesses.forEach(displayBusinessList);
+        }
+    }
+}
+
+function clearCards() {
+    document.querySelector('.bus-cards').innerHTML = "";
+}
+
+function hearClick(value) {
+    // console.log(clickState +''+value);
+    if (clickState === value) {
+        return;
+    } 
+    else if (value === 'grid') {
+        clickState = 'grid';
+        clearCards();
+        getBusinesses(requestURL, 'grid');
+    } 
+    else if (value === 'list') {
+        clickState = 'list';
+        clearCards();
+        getBusinesses(requestURL, 'list');
+    }
+}
+
+getBusinesses(requestURL, clickState);

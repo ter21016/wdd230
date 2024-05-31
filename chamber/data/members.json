@@ -5,7 +5,7 @@
         "address": "123 124th, City, Country",
         "phone": "+1 (425) 123-4567",
         "website": "https://www.thebroomcleaningservices.com/",
-        "image": "",
+        "image": "images/thebroom.webp",
         "membershipLevel": "images/gold.png"
       },
       {
@@ -13,7 +13,7 @@
         "address": "456 Elm Street, Town, Country",
         "phone": "+27 (21) 234-5678",
         "website": "https://sevencompany.info/",
-        "image": "",
+        "image": "images/business-finance-logo-and-symbols-concept-illustration-free-vector (1).webp",
         "membershipLevel": "images/gold.png"
       },
       {
@@ -29,7 +29,7 @@
         "address": "101 Pine Street, Hamlet, Country",
         "phone": "+27 (41) 456-7890",
         "website": "https://www.supplyhouse.com",
-        "image": "",
+        "image": "images/supply.webp",
         "membershipLevel": "images/silver.png"
       },
       {
@@ -37,7 +37,7 @@
         "address": "202 Cedar Street, Village, Country",
         "phone": "+27 (51) 567-8901",
         "website": "https://galaxyel.com/",
-        "image": "",
+        "image": "images/galaxy-electric.webp",
         "membershipLevel": "images/gold.png"
       },
       {
@@ -45,7 +45,7 @@
         "address": "303 Birch Street, Town, Country",
         "phone": "+27 (61) 678-9012",
         "website": "https://www.brimmasolar.com/",
-        "image": "images/acme_uma_1024_appflyer.webp",
+        "image": "images/65c2673b372e5c7fd06a69af_brimma-solar-logo (1) (1).webp",
         "membershipLevel": "images/np.png"
       },
       {
@@ -53,7 +53,7 @@
         "address": "404 Maple Street, City, Country",
         "phone": "+27 (71) 789-0123",
         "website": "https://www.capstone-sol.com/",
-        "image": "",
+        "image": "images/image45 (2).webp",
         "membershipLevel": "images/np.png"
       },
       {
@@ -61,7 +61,7 @@
         "address": "505 Willow Street, Hamlet, Country",
         "phone": "+27 (81) 890-1234",
         "website": "https://spotlesshomesservices.com/",
-        "image": "",
+        "image": "images/spotless.webp",
         "membershipLevel": "images/silver.png"
       }
       

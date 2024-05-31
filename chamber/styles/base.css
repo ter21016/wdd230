@@ -292,6 +292,59 @@ wf1 input[type="checkbox"]{
     
     
 }
+
+/* //directory// */
+
+.bus-cards {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+.bus-cards section {
+    flex: 1 100%;
+    max-width: 25em;
+    margin: 1.5em;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: white;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+}
+.bus-cards section h2 {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+.bus-cards > p, .bus-cards a {
+    font-size: .9em;
+    margin-bottom: .3em;
+}
+.bus-cards section img {
+    margin: 1em 0 .5em;
+    border-radius: 5px;
+}
+
+.bus-cards table {
+    background-color: white;
+    border-radius: 10px;
+    grid-column: 1/4;
+}
+
+#bus-view {
+    background-color: white;
+    margin: 3em 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+}
+#bus-view i {
+    color: white;
+    padding: 10px;
+    margin: .2em;
+    background-color: #3D3F85;
+    border-radius: 5px;
+}
+
+
 @media (max-width: 500px) {
 
 
@@ -368,6 +421,10 @@ wf1 input[type="checkbox"]{
         height: 100vh;
         
     } 
+    .bus-cards {
+        grid-template-columns: 50% 50%;
+    }
+    
     footer{
         font-size: 12px;
     }
