@@ -80,7 +80,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const viewTypeSelector = document.getElementById('view-type');
     const companyCardsContainer = document.getElementById('company-cards');
-    const requestURL = 'https://raw.githubusercontent.com/ter21016/wdd230/main/chamber/data/members.json';
+    const requestURL = 'https://github.com/ter21016/wdd230/blob/main/chamber/data/members.json';
   
     viewTypeSelector.addEventListener('change', () => {
       fetchBusinesses(viewTypeSelector.value);
