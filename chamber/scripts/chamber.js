@@ -91,8 +91,8 @@ christmasDateElement.textContent = christmasDate;
 daysElement.textContent = `${daysleft.toFixed(0)} days`;
 
 // Directory//
-
-const requestURL = 'data/members.json';
+const baseUrl = "https://github.com/ter21016/wdd230/blob/main/chamber/index.html"
+const requestURL = 'chamber/data/members.json';
 let clickState = 'grid';
 
 function displayBusinessGrid(item) {
@@ -160,17 +160,13 @@ function displayBusinessList(item) {
 
 async function getBusinesses(requestURL, type) {
     const response = await fetch(requestURL);
-    // console.log(response);
-
     if (response.ok) {
         const jsObject = await response.json();
-        // console.log(jsObject);
-
         const businesses = jsObject['businesses'];
-        
+
         if (type === 'grid') {
             businesses.forEach(displayBusinessGrid);
-        } else if (type=== 'list') {
+        } else if (type === 'list') {
             createTable();
             businesses.forEach(displayBusinessList);
         }
@@ -182,16 +178,13 @@ function clearCards() {
 }
 
 function hearClick(value) {
-    // console.log(clickState +''+value);
     if (clickState === value) {
         return;
-    } 
-    else if (value === 'grid') {
+    } else if (value === 'grid') {
         clickState = 'grid';
         clearCards();
         getBusinesses(requestURL, 'grid');
-    } 
-    else if (value === 'list') {
+    } else if (value === 'list') {
         clickState = 'list';
         clearCards();
         getBusinesses(requestURL, 'list');

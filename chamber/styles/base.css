@@ -295,53 +295,97 @@ wf1 input[type="checkbox"]{
 
 /* //directory// */
 
-.bus-cards {
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+/* //directory // */
+
+#company-cards.gridC {
     display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-}
-.bus-cards section {
-    flex: 1 100%;
-    max-width: 25em;
-    margin: 1.5em;
-    padding: 1em;
-    border-radius: 5px;
-    background-color: white;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25); 
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
-}
-.bus-cards section h2 {
-    font-size: 1.5em;
-    margin-bottom: .5em;
-}
-.bus-cards > p, .bus-cards a {
-    font-size: .9em;
-    margin-bottom: .3em;
-}
-.bus-cards section img {
-    margin: 1em 0 .5em;
-    border-radius: 5px;
+    width: calc(100%);
+    margin-right: 16px;
+    vertical-align: top;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
 }
 
-.bus-cards table {
-    background-color: white;
-    border-radius: 10px;
-    grid-column: 1/4;
+#company-cards.gridC section {
+    grid-column-end: auto;
 }
 
-#bus-view {
-    background-color: white;
-    margin: 3em 0 0;
-    padding: 0;
-    display: flex;
-    justify-content: right;
+#company-cards section {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #cccccc;
 }
-#bus-view i {
-    color: white;
-    padding: 10px;
-    margin: .2em;
-    background-color: #3D3F85;
-    border-radius: 5px;
+
+#company-cards h2 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#company-cards p {
+    margin-bottom: 4px;
+}
+
+#company-cards img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    border-radius: 100px;
 }
 
 

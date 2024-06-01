@@ -21,6 +21,7 @@
     <link rel="icon" href="favicon.ico">
     <title>Directory </title>
     <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
   
 </head>
 
@@ -44,7 +45,7 @@
     
    </div>
        <section id="hero-msg">
-          <h1 class="home-title">Lima Chamber of Commerce</h1>
+          <h1 class="home-title">Directory </h1>
            
            <div class='button-box'>
                <a class='book' href="join.html">Join the Chamber</a>
@@ -52,14 +53,26 @@
        </section>
     
 
-    
-     <main>
-        <div id="bus-view">
-            <i class="fa-solid fa-square" onclick="hearClick('grid')"></i>
-            <i class="fa-solid fa-list" onclick="hearClick('list')"></i>
+<!--     
+       <main class="directory">
+        <div class="menu">
+          <button id="grid">⏹️Grid</button>
+          <button id="list">📄List</button>
         </div>
         <div class="bus-cards"></div>
-     </main>
+      </main> -->
+
+      <main>
+        <div class="view-toggle">
+            <label for="view-type">View:</label>
+            <select id="view-type">
+                <option value="list">📄List</option>
+                <option value="gridC">⏹️Grid</option>
+            </select>
+        </div>
+
+        <div id="company-cards"></div>
+    </main>
         
     <footer>
         <p>Jessica Terry | WDD 230 | Lima Chamber Of Commerce</p>
