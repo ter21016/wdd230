@@ -1,5 +1,5 @@
-[
-    
+{
+  "businesses": [
       {
         "name": "The Broom LLC",
         "address": "123 124th, City, Country",
@@ -22,7 +22,7 @@
         "phone": "+27 (31) 345-6789",
         "website": "https://www.acmefood.com/",
         "image": "images/acme_uma_1024_appflyer.webp",
-        "membershipLevel": "images/bronze.png"
+        "membership": "images/bronze.png"
       },
       {
         "name": "Supply House",
@@ -30,7 +30,7 @@
         "phone": "+27 (41) 456-7890",
         "website": "https://www.supplyhouse.com",
         "image": "images/supply.webp",
-        "membershipLevel": "images/silver.png"
+        "membership": "images/silver.png"
       },
       {
         "name": "Galaxy Electric",
@@ -38,7 +38,7 @@
         "phone": "+27 (51) 567-8901",
         "website": "https://galaxyel.com/",
         "image": "images/galaxy-electric.webp",
-        "membershipLevel": "images/gold.png"
+        "membership": "images/gold.png"
       },
       {
         "name": "Brimma Solar",
@@ -46,7 +46,7 @@
         "phone": "+27 (61) 678-9012",
         "website": "https://www.brimmasolar.com/",
         "image": "images/65c2673b372e5c7fd06a69af_brimma-solar-logo (1) (1).webp",
-        "membershipLevel": "images/np.png"
+        "membership": "images/np.png"
       },
       {
         "name": "Capstone Sol",
@@ -54,7 +54,7 @@
         "phone": "+27 (71) 789-0123",
         "website": "https://www.capstone-sol.com/",
         "image": "images/image45 (2).webp",
-        "membershipLevel": "images/np.png"
+        "membership": "images/np.png"
       },
       {
         "name": "Spotless Home",
@@ -62,8 +62,9 @@
         "phone": "+27 (81) 890-1234",
         "website": "https://spotlesshomesservices.com/",
         "image": "images/spotless.webp",
-        "membershipLevel": "images/silver.png"
+        "membership": "images/silver.png"
       }
       
-    
-    ]
+  ]
+
+}
