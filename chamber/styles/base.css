@@ -281,7 +281,7 @@ wf1 input[type="checkbox"]{
     margin: 2rem 0 2rem 4rem;
     display: grid;
     grid-template-columns: auto auto ;
-    grid-template-rows: 1/ 3 auto;
+    grid-template-rows: 1 / 3 auto;
     margin: 2rem auto 2rem 2rem;
     padding: 20%;
 }
@@ -302,7 +302,7 @@ wf1 input[type="checkbox"]{
   .menu {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    background-color: rgb(59, 59, 59);
+    background-color: var(--dark-blue);;
     text-align: center;
   }
   
@@ -311,11 +311,11 @@ wf1 input[type="checkbox"]{
     font-weight: 700;
   }
   
-  section {
+  /* section {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
     background-color: #eee;
-  }
+  } */
   
   #cards {
     display: grid;
@@ -392,7 +392,12 @@ wf1 input[type="checkbox"]{
     max-width: 100%;
   }  */
 
-
+ .club{
+    text-align: center;
+    font-size: 50px;
+    
+    padding: 30px;
+ }
 
 
   
