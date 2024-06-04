@@ -13,7 +13,7 @@ const displayBusinesses = (businesses) => {
     let bName = document.createElement("h2");
     let logo = document.createElement("img");
   
-    let bDescription = document.createElement("p");
+    let bPhone = document.createElement("p");
     let address = document.createElement("p");
     let website = document.createElement("a");
     let membershipLevel = document.createElement("h4");
@@ -25,7 +25,7 @@ const displayBusinesses = (businesses) => {
     logo.setAttribute("height", "auto");
 
     bName.textContent = `${business.name}`;
-    bDescription.textContent = `${business.description}`;
+    bPhone.textContent = `${business.phone}`;
     address.textContent = `${business.address}`;
     membershipLevel.textContent = `${business.membershipLevel} Membership`;
   
@@ -35,7 +35,7 @@ const displayBusinesses = (businesses) => {
 
     card.appendChild(logo);
     card.appendChild(bName);
-    card.appendChild(bDescription);
+    card.appendChild(bPhone);
     card.appendChild(address);
   
     card.appendChild(membershipLevel);
@@ -61,3 +61,4 @@ function showList() {
   display.classList.add("list-directory");
   display.classList.remove("grid-directory");
 }
+
