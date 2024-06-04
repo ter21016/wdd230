@@ -12,11 +12,11 @@ const displayBusinesses = (businesses) => {
     let card = document.createElement("section");
     let bName = document.createElement("h2");
     let logo = document.createElement("img");
-    let memberSince = document.createElement("p");
+  
     let bDescription = document.createElement("p");
     let address = document.createElement("p");
     let website = document.createElement("a");
-    let membership = document.createElement("h4");
+    let membershipLevel = document.createElement("h4");
 
     logo.setAttribute("src", business.logo);
     logo.setAttribute("alt", `Logo of ${business.name}`);
@@ -27,8 +27,8 @@ const displayBusinesses = (businesses) => {
     bName.textContent = `${business.name}`;
     bDescription.textContent = `${business.description}`;
     address.textContent = `${business.address}`;
-    membership.textContent = `${business.membership} Membership`;
-    memberSince.textContent = `Member Since: ${business.since}`;
+    membershipLevel.textContent = `${business.membershipLevel} Membership`;
+  
     website.setAttribute("href", `${business.url}`);
     website.textContent = business.url;
     website.setAttribute("target", "_blank");
@@ -37,8 +37,8 @@ const displayBusinesses = (businesses) => {
     card.appendChild(bName);
     card.appendChild(bDescription);
     card.appendChild(address);
-    card.appendChild(memberSince);
-    card.appendChild(membership);
+  
+    card.appendChild(membershipLevel);
     card.appendChild(website);
 
     cards.appendChild(card);

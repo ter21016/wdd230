@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const menuButton = document.getElementById("menu");
+  const menuButton = document.getElementById("#menu");
   const nav = document.querySelector("nav");
 
   menuButton.addEventListener("click", function () {
@@ -9,8 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Match 'timestamp' in 'last_modif=timestamp'
-// e.g. '1687964614822' in 'last_modif=1687964614822'
+//visit//
+
+//Match 'timestamp' in 'last_modif=timestamp'
+ //e.g. '1687964614822' in 'last_modif=1687964614822'
 const pattern = /last_modif\s*=\s*([^;]*)/;
 
 if (Date.parse(document.lastModified) > (parseFloat(document.cookie.match(pattern)?.[1]) || 0)) {

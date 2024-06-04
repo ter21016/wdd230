@@ -2,27 +2,27 @@
   "businesses": [
       {
         "name": "The Broom LLC",
-        "address": "123 124th, City, Country",
+        "address": "123 124th, Lima, Peru",
         "phone": "+1 (425) 123-4567",
         "website": "https://www.thebroomcleaningservices.com/",
         "logo": "images/thebroom.webp",
-        "membershipLevel": "images/gold.png"
+        "membershipLevel": "Gold"
       },
       {
         "name": "Seven Company",
-        "address": "456 Elm Street, Town, Country",
+        "address": "456 Elm Street, Lima, Peru",
         "phone": "+27 (21) 234-5678",
         "website": "https://sevencompany.info/",
         "logo": "images/business-finance-logo-and-symbols-concept-illustration-free-vector (1).webp",
-        "membershipLevel": "images/gold.png"
+        "membershipLevel": "Gold"
       },
       {
         "name": "Acme Food",
-        "address": "789 Oak Street, Village, Country",
+        "address": "789 Oak Street, Lima, Peru",
         "phone": "+27 (31) 345-6789",
         "website": "https://www.acmefood.com/",
         "logo": "images/acme_uma_1024_appflyer.webp",
-        "membership": "images/bronze.png"
+        "membershipLevel": "Bronze"
       },
       {
         "name": "Supply House",
@@ -30,7 +30,7 @@
         "phone": "+27 (41) 456-7890",
         "website": "https://www.supplyhouse.com",
         "logo": "images/supply.webp",
-        "membership": "images/silver.png"
+        "membershipLevel": "Silver"
       },
       {
         "name": "Galaxy Electric",
@@ -38,23 +38,23 @@
         "phone": "+27 (51) 567-8901",
         "website": "https://galaxyel.com/",
         "logo": "images/galaxy-electric.webp",
-        "membership": "images/gold.png"
+        "membershipLevel": "Silver"
       },
       {
         "name": "Brimma Solar",
-        "address": "303 Birch Street, Town, Country",
+        "address": "303 Birch Street, Lima, Country",
         "phone": "+27 (61) 678-9012",
         "website": "https://www.brimmasolar.com/",
         "logo": "images/brima.webp",
-        "membership": "images/gold.png"
+        "membershipLevel": "Bronze"
       },
       {
         "name": "Capstone Sol",
-        "address": "404 Maple Street, City, Country",
+        "address": "404 Maple Street, Lima, Peru",
         "phone": "+27 (71) 789-0123",
         "website": "https://www.capstone-sol.com/",
         "logo": "images/image45 .webp",
-        "membership": "images/bronze.png"
+        "membershipLevel": "Bronze"
       },
       {
         "name": "Spotless Home",
@@ -62,7 +62,7 @@
         "phone": "+27 (81) 890-1234",
         "website": "https://spotlesshomesservices.com/",
         "logo": "images/spotless.webp",
-        "membership": "images/silver.png"
+        "membershipLevel": "Silver"
       }
       
   ]
